@@ -1,0 +1,21 @@
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation=" http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <bean id="emp1" class="com.telusko.beans.Employee">
+        <constructor-arg value="101"/>
+        <constructor-arg value="cherry"/>
+        <constructor-arg value="30000"/>
+        <constructor-arg value="srikakulam"/>
+    </bean>
+    <bean id="emp2" class="com.telusko.beans.Employee">
+        <constructor-arg index="2" value="28000"/>
+        <constructor-arg index="3" value="kanpur"/>
+        <constructor-arg  index="0" value="102"/>
+        <constructor-arg index="1" value="charan"/>
+    </bean>
+    <bean id="emp3" class="com.telusko.beans.Employee">
+        <constructor-arg name="addr" value="Bengaluru"/>
+        <constructor-arg name="salary" value="454545"/>
+        <constructor-arg name="id" value="103"/>
+        <constructor-arg name="name" value="Shweta"/>
+    </bean>
+
+</beans>

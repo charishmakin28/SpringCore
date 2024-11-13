@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation=" http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+<bean id ="bd" class ="com.services.com.telusko.BlueDart"/>
+<bean id ="fd" class ="com.services.com.telusko.Fedex"/>
+<bean id ="ff" class ="com.services.com.telusko.FirstFlight"/>
+
+<bean id ="amz" class="com.main.com.telusko.Amazon">
+    <constructor-arg ref = "bd" name="service"></constructor-arg>
+<!--<property ref = "bd" name="service" ></property>-->
+
+</bean>
+</beans>
